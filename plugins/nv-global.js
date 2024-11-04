@@ -127,7 +127,7 @@ handler.all = async function (m, { conn }) {
   if (
     !chat.isBanned &&
     m.text.match(
-      /(miarda de bot|mierda de bot|mearda de bot|Miarda de Bot|Mierda de Bot|Mearda de Bot)/gi,
+      /(mierda de bot|mierda de bot|mearda de bot|Miarda de Bot|Mierda de Bot|Mearda de Bot|bot de mierda)/gi,
     )
   ) {
     if (!db.data.chats[m.chat].audios) return;
@@ -146,7 +146,7 @@ handler.all = async function (m, { conn }) {
     );
   }
 
-  if (!chat.isBanned && m.text.match(/(baÃ±ate|BaÃ±ate)/gi)) {
+  if (!chat.isBanned && m.text.match(/(bañate|Bañate)/gi)) {
     if (!db.data.chats[m.chat].audios) return;
     if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
     const vn = "./src/assets/audio/01J672VZBZ488TCVYA7KBB3TFG.mp3";
@@ -247,28 +247,6 @@ handler.all = async function (m, { conn }) {
     if (!db.data.chats[m.chat].audios) return;
     if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
     const vn = "./src/assets/audio/01J6730WRS4KJEZ281N2KJR1SV.mp3";
-    mconn.conn.sendPresenceUpdate("recording", m.chat);
-    mconn.conn.sendMessage(
-      m.chat,
-      {
-        audio: { url: vn },
-        fileName: "error.mp3",
-        mimetype: "audio/mpeg",
-        ptt: true,
-      },
-      { quoted: m },
-    );
-  }
-
-  if (
-    !chat.isBanned &&
-    m.text.match(
-      /(chica lgante|Chica lgante|Chicalgante|chicalgante|chical gante|Chical gante)/gi,
-    )
-  ) {
-    if (!db.data.chats[m.chat].audios) return;
-    if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
-    const vn = "./src/assets/audio/01J6732M2RT3F96FMJ3ZATCJYF.mp3";
     mconn.conn.sendPresenceUpdate("recording", m.chat);
     mconn.conn.sendMessage(
       m.chat,
@@ -387,85 +365,6 @@ handler.all = async function (m, { conn }) {
     if (!db.data.chats[m.chat].audios) return;
     if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
     const vn = "./src/assets/audio/01J6739GKKKN029YNX1TQ9CZR5.mp3";
-    mconn.conn.sendPresenceUpdate("recording", m.chat);
-    mconn.conn.sendMessage(
-      m.chat,
-      {
-        audio: { url: vn },
-        fileName: "error.mp3",
-        mimetype: "audio/mpeg",
-        ptt: true,
-      },
-      { quoted: m },
-    );
-  }
-
-  if (!chat.isBanned && m.text.match(/(gemidos|gemime|gime|gemime|gemi2)/gi)) {
-    if (!db.data.chats[m.chat].audios) return;
-    if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
-    const vn = "./src/assets/audio/01J673B4CRSS9Z2CX6E4R8MZPZ.mp3";
-    mconn.conn.sendPresenceUpdate("recording", m.chat);
-    mconn.conn.sendMessage(
-      m.chat,
-      {
-        audio: { url: vn },
-        fileName: "error.mp3",
-        mimetype: "audio/mpeg",
-        ptt: true,
-      },
-      { quoted: m },
-    );
-  }
-
-  if (
-    !chat.isBanned &&
-    m.text.match(/(audio hentai|Audio hentai|audiohentai|Audiohentai)/gi)
-  ) {
-    if (!db.data.chats[m.chat].audios) return;
-    if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
-    const vn = "./src/assets/audio/01J673BTPKK29A7CVJW9WKXE9T.mp3";
-    mconn.conn.sendPresenceUpdate("recording", m.chat);
-    mconn.conn.sendMessage(
-      m.chat,
-      {
-        audio: { url: vn },
-        fileName: "error.mp3",
-        mimetype: "audio/mpeg",
-        ptt: true,
-      },
-      { quoted: m },
-    );
-  }
-
-  if (
-    !chat.isBanned &&
-    m.text.match(/(sexo|Sexo|Hora de sexo|hora de sexo)/gi)
-  ) {
-    if (!db.data.chats[m.chat].audios) return;
-    if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
-    const vn = "./src/assets/audio/01J673WHBVDXH4N0Q4WGBM568B.mp3";
-    mconn.conn.sendPresenceUpdate("recording", m.chat);
-    mconn.conn.sendMessage(
-      m.chat,
-      {
-        audio: { url: vn },
-        fileName: "error.mp3",
-        mimetype: "audio/mpeg",
-        ptt: true,
-      },
-      { quoted: m },
-    );
-  }
-
-  if (
-    !chat.isBanned &&
-    m.text.match(
-      /(laoracion|La biblia|La oraciÃ³n|La biblia|La oraciÃ³n|la biblia|La Biblia)/gi,
-    )
-  ) {
-    if (!db.data.chats[m.chat].audios) return;
-    if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
-    const vn = "./src/assets/audio/01J6743DB5T555Y9YRAG5GSPVX.mp3";
     mconn.conn.sendPresenceUpdate("recording", m.chat);
     mconn.conn.sendMessage(
       m.chat,
