@@ -16,6 +16,7 @@ global.isBaileysFail = false;
 global.defaultLenguaje = "es";
 
 global.owner = [["50583775449", "👑 505 Esports - Creador 👑", true]];
+global.owner = [["50584907679", "👑 Darksson - Creador 👑", true]];
 
 global.suittag = ["5219993404349"];
 global.prems = ["51995386439"];
