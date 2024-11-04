@@ -1,5 +1,6 @@
 { pkgs }: {
     deps = [
+      pkgs.openssh
         pkgs.nodejs
         pkgs.nodePackages.typescript
         pkgs.ffmpeg
