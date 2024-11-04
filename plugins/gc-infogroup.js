@@ -6,7 +6,7 @@ const handler = async (m, {conn, participants, groupMetadata}) => {
   const tradutor = _translate.plugins.gc_infogroup
 
   const pp = await conn.profilePictureUrl(m.chat, 'image').catch((_) => null) || './src/avatar_contact.png';
-  const {antiToxic, antiTraba, antidelete, antiviewonce, isBanned, welcome, detect, detect2, sWelcome, sBye, sPromote, sDemote, antiLink, antiLink2, modohorny, autosticker, modoadmin, audios, delete: del} = global.db.data.chats[m.chat];
+  const {antiToxic, antiTraba, antidelete, antiviewonce, isBanned, welcome, detect, detect2, sWelcome, sBye, sPromote, sDemote, antiLink, antiLink2, autosticker, modoadmin, audios, delete: del} = global.db.data.chats[m.chat];
   const groupAdmins = participants.filter((p) => p.admin);
   const listAdmin = groupAdmins.map((v, i) => `${i + 1}. @${v.id.split('@')[0]}`).join('\n');
   const owner = groupMetadata.owner || groupAdmins.find((p) => p.admin === 'superadmin')?.id || m.chat.split`-`[0] + '@s.whatsapp.net';
@@ -36,7 +36,6 @@ ${tradutor.texto1[10]}  ${detect ? '✅' : '❌'}
 ${tradutor.texto1[11]}  ${detect2 ? '✅' : '❌'} 
 ${tradutor.texto1[12]}  ${antiLink ? '✅' : '❌'} 
 ${tradutor.texto1[13]}  ${antiLink2 ? '✅' : '❌'} 
-${tradutor.texto1[14]}  ${modohorny ? '✅' : '❌'} 
 ${tradutor.texto1[15]}  ${autosticker ? '✅' : '❌'} 
 ${tradutor.texto1[16]}  ${audios ? '✅' : '❌'} 
 ${tradutor.texto1[17]}  ${antiviewonce ? '✅' : '❌'} 

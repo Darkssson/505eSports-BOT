@@ -83,7 +83,6 @@ ${tradutor.texto1[9]} ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌')
   ├❧ _${usedPrefix}token_
   ├❧ _${usedPrefix}stop_
   ├❧ _${usedPrefix}bots_
-  ├❧
   ├❧ _${usedPrefix}enable restrict_
   ├❧ _${usedPrefix}disable restrict_
   ├❧ _${usedPrefix}enable autoread_
@@ -144,8 +143,6 @@ ${tradutor.texto1[9]} ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌')
   ╭───── • ◆ • ─────╮
   ├❧ _${usedPrefix}enable *welcome*_
   ├❧ _${usedPrefix}disable *welcome*_
-  ├❧ _${usedPrefix}enable *modohorny*_
-  ├❧ _${usedPrefix}disable *modohorny*_
   ├❧ _${usedPrefix}enable *antilink*_
   ├❧ _${usedPrefix}disable *antilink*_
   ├❧ _${usedPrefix}enable *antilink2*_
